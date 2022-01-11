@@ -1,0 +1,78 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0px;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 24px;
+
+  height: 100%;
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0 0;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+.mobile-menu ul a {
+  font-weight: bold;
+
+  color: var(--black);
+  text-decoration: none;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
+.mobile-menu ul:nth-child(1) {
+  /* padding-bottom: 40px; */
+  border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul:nth-child(2) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.mobile-menu ul:last-child li:nth-child(2) a {
+  font-size: var(--sm);
+  color: var(--hospital-green);
+}
+
+.mobile-menu ul:last-child li:nth-child(1) {
+  margin: 0 0 12px 0;
+}
+
+/* -------------------------------------- */
+
+.email {
+  font-size: var(--sm);
+  font-weight: 300 !important;
+}

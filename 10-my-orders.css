@@ -1,0 +1,71 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  margin: 0px;
+}
+
+.my-orders-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card-container {
+  width: 400px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.item-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.title p:nth-child(1) {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+.item-info p:nth-child(1) {
+  margin-bottom: 4px;
+
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.item-info p:nth-child(2) {
+  margin-top: 4px;
+  font-size: var(--sm);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price p {
+  font-weight: bold;
+}
+
+.price img {
+  width: 7px;
+  height: 12px;
+}

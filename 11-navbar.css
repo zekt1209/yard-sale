@@ -1,0 +1,111 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 24px;
+  border-bottom: 1px solid var(--very-light-pink);
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  text-decoration: none;
+  color: var(--hospital-green);
+  border: 1px solid var(--hospital-green);
+}
+
+.navbar-left ul {
+  margin-left: 12px;
+}
+
+.navbar-email {
+  margin-right: 12px;
+  font-size: var(--sm);
+}
+
+.navbar-shopping-cart {
+  position: relative;
+}
+
+.navbar-shopping-cart div {
+  /* border: 1px solid var(--hospital-green); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -6px;
+
+  width: 18px;
+  height: 18px;
+
+  font-size: var(--sm);
+  font-weight: bold;
+
+  border-radius: 50%;
+  background-color: var(--hospital-green);
+}
+
+@media (max-width: 763px) {
+  .menu {
+    display: block;
+  }
+
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-email {
+    display: none;
+  }
+}
